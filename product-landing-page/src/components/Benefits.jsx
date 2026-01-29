@@ -20,7 +20,7 @@ function Benefits() {
               key={item.id}
               className={`flex flex-col lg:flex-row gap-8 items-center ${index % 2 === 1 ? "lg:flex-row-reverse" : ""}`}
             >
-              <div className="flex-1 bg-gray-100 rounded-3xl aspect-video flex items-center justify-center text-6xl">
+              <div className="flex-1 bg-gray-100 rounded-3xl p-16 md:p-0 md:aspect-video flex items-center justify-center text-6xl">
                 {emojis[index]}
               </div>
               <div className="flex-1 text-center lg:text-left">
