@@ -1,7 +1,11 @@
 import { benefits } from "../data";
 
 function Benefits() {
-  const emojis = ["💼", "✈️", "🎵"];
+  const images = [
+    "/benefit-focus.jpg",
+    "/benefit-travel.jpg",
+    "/benefit-music.jpg",
+  ];
 
   return (
     <section id="benefits" className="py-20 bg-white">
@@ -18,10 +22,16 @@ function Benefits() {
           {benefits.map((item, index) => (
             <div
               key={item.id}
-              className={`flex flex-col lg:flex-row gap-8 items-center ${index % 2 === 1 ? "lg:flex-row-reverse" : ""}`}
+              className={`flex flex-col lg:flex-row gap-8 items-center ${
+                index % 2 === 1 ? "lg:flex-row-reverse" : ""
+              }`}
             >
-              <div className="flex-1 bg-gray-100 rounded-3xl p-16 md:p-0 md:aspect-video flex items-center justify-center text-6xl">
-                {emojis[index]}
+              <div className="flex-1 rounded-3xl overflow-hidden">
+                <img
+                  src={images[index]}
+                  alt={item.title}
+                  className="w-full h-full aspect-square object-cover"
+                />
               </div>
               <div className="flex-1 text-center lg:text-left">
                 <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">

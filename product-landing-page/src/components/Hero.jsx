@@ -20,7 +20,11 @@ function Hero() {
         </div>
         <div className="bg-gray-100 rounded-3xl p-8 lg:p-12">
           <div className="aspect-square bg-gray-200 rounded-2xl flex items-center justify-center text-6xl">
-            🎧
+            <img
+              src="/headphones-hero.avif"
+              alt="SoundPro X1 Headphones"
+              className="w-full rounded-2xl aspect-square object-cover scale-115"
+            />
           </div>
         </div>
       </div>

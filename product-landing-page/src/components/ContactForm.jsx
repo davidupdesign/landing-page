@@ -8,8 +8,19 @@ function ContactForm() {
     message: "",
   });
 
+  const [error, setError] = useState("");
+
   const handleSubmit = (e) => {
     e.preventDefault(); //stops page refreshe
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(formData.email)) {
+      setError("Please enter a valid email address");
+      return;
+    }
+
+    setError(""); // if valid clear error
+
     console.log("Form has been submitted:", formData);
     setFormData({ name: "", email: "", message: "" });
   };
@@ -75,6 +86,7 @@ function ContactForm() {
                 }
                 className="w-full px-4 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent outline-none"
               />
+              {error && <p className="text-red-500 text-sm">{error}</p>}
               <textarea
                 rows={4}
                 placeholder="How can we help?"
