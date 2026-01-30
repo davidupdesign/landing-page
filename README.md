@@ -6,9 +6,8 @@ A modern, responsive product landing page built with React and Tailwind CSS. Thi
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-38B2AC?logo=tailwind-css)
 ![Vite](https://img.shields.io/badge/Vite-6.2-646CFF?logo=vite)
 
+<H2>Live Preview Site: https://soundpro.vercel.app/</H2>
 <img width="2044" height="1108" alt="SCR-20260130-tisk" src="https://github.com/user-attachments/assets/8b2851ae-959d-4ae7-ba1a-175e994a334e" />
-
-
 
 ## Getting Started
 
